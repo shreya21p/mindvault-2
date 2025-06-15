@@ -107,6 +107,15 @@ def store_message(text, emotion=None):
 def chat_with_bot(user_input, mode="/listener"):
     global persona_instruction
 
+    # Always apply mode passed from frontend (sidebar)
+    if "coach" in mode:
+        persona_instruction = COACH_PROMPT
+    elif "cheer" in mode:
+        persona_instruction = CHEERLEADER_PROMPT
+    else:
+        persona_instruction = LISTENER_PROMPT
+
+    # Optional: allow override if user types slash commands
     if user_input.strip().startswith("/"):
         if "coach" in user_input:
             persona_instruction = COACH_PROMPT
