@@ -4,3 +4,4 @@ google-generativeai
 chromadb
 matplotlib
 wordcloud
+sentence-transformers
