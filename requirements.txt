@@ -1,1 +1,6 @@
+
 streamlit
+google-generativeai
+chromadb
+matplotlib
+wordcloud
