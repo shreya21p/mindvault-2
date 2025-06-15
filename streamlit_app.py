@@ -6,7 +6,9 @@ from mood_engine import (
     recall_entries_by_day,
     search_similar_memory
 )
-
+import sys
+import os
+sys.path.append(os.path.dirname(__file__))
 st.set_page_config(page_title=" MindVault", layout="centered")
 
 # === Theme Colors per Persona ===
