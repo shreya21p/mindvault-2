@@ -2,9 +2,7 @@ import streamlit as st
 from mood_engine import (
     chat_with_bot,
     plot_mood_trends,
-    mood_wordcloud,
-    recall_entries_by_day,
-    search_similar_memory
+    mood_wordcloud
 )
 import sys
 import os
